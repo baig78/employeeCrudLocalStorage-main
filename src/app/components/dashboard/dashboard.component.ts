@@ -29,7 +29,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
     console.log('Output')
   }
   ngOnInit(): void {
-    
+    debugger;
     this.commanSrv.setData('theme',
      'primary');
 

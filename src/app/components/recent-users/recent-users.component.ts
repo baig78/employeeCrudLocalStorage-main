@@ -15,13 +15,13 @@ export class RecentUsersComponent implements OnInit {
   colArr = ['receivedFrom','username','email','phone'];
   constructor(private empSrv: EmpService,private commsrv: CommanService) {
     this.commsrv.getThemeSubject().subscribe(res=> {
-      
+      debugger;
       this.theme = res;
     })
     setTimeout(() => {
       this.isLoader = false;
       const theme = this.commsrv.getData('theme');
-      
+      debugger;
     }, 2000);
    }
 

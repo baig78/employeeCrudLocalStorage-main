@@ -15,18 +15,18 @@ export class CommanService {
     this.themeSubject = new Subject();
   }
   emitData(theme: string) {
-    
+    debugger;
     this.themeSubject.next(theme);
   }
   getThemeSubject():Observable<any> {
     return this.themeSubject;
   }
   setData(key: string, value:string) {
-    
+    debugger;
     this.data[key]=value;
   }
   getData(key:string){
-    
+    debugger;
     return this.data[key];
   }
 
